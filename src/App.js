@@ -3,7 +3,7 @@ import Sidebar from './Components/Sidebar'
 import About from './Components/About'
 import Resume from './Components/Resume'
 import Projects from './Components/Projects'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom'
 
 function App() {
   return (
@@ -19,10 +19,12 @@ function App() {
             </div>
             <div className='col-lg-9 app-main-content'>
               <Navbar />
-              <Route path="/" component={About} />
+              <Route exact path="/" component={About} />
               <Route path="/resume" component={Resume} />
               <Route path="/projects" component={Projects} />
-
+              <Route>
+                <Redirect to="/" />
+              </Route>
             </div>
           </div>
         </div>
