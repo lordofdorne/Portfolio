@@ -1,7 +1,7 @@
 import React from 'react';
 import react from './assets/react.svg'
 import Bar from './Bar';
-
+import { motion } from 'framer-motion'
 const languages = [
   {
     icon: react,
@@ -64,11 +64,37 @@ const tools = [
 
 ]
 
+const resumeVariant = {
+  hidden: {
+    opacity: 0
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.2,
+      durarion: 0.6,
+
+    }
+  },
+  // exit: {
+  //   opacity: 0,
+  //   transition: {
+  //     ease: 'easeInOut'
+  //   }
+  // }
+}
+
 
 
 const Resume = () => {
   return (
-    <div className="container resume">
+    <motion.div className="container resume"
+      variants={resumeVariant}
+      initial='hidden'
+      animate='visible'
+
+    >
       <div className="row">
         <div className="col-lg-6 resume-card" >
           <h4 className="resume-card__heading">
@@ -141,7 +167,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -24,7 +24,12 @@ const Navbar = () => {
     },
     visible: {
       y: 0,
-      opacity: 1
+      opacity: 1,
+      transition: {
+        delay: 0.2,
+        durarion: 0.7,
+        type: 'spring'
+      }
     }
   }
 
