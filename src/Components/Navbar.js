@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
   const [active, setActive] = useState('')
@@ -16,8 +17,25 @@ const Navbar = () => {
     }
   }, [active])
 
+  const navbarVariant = {
+    hidden: {
+      y: '-30vh',
+      opacity: 0
+    },
+    visible: {
+      y: 0,
+      opacity: 1
+    }
+  }
+
   return (
-    <div className="navbar">
+    <motion.div className="navbar"
+      variants={navbarVariant}
+      initial='hidden'
+      animate='visible'
+    >
+
+
       <div className="navbar-active">
         {active}
       </div>
@@ -39,7 +57,7 @@ const Navbar = () => {
         }
       </div>
 
-    </div>
+    </motion.div>
   )
 }
 
