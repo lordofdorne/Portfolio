@@ -1,9 +1,9 @@
 import React from 'react'
-import logo from './Asim_HeadShot.png'
+import logo from './assets/Asim_HeadShot.png'
 import { SocialIcon } from 'react-social-icons';
-import tie from './tie.svg'
-import pin from './pin.svg'
-import resume from './Asim-Samuel-Resume.pdf'
+import tie from './assets/tie.svg'
+import pin from './assets/pin.svg'
+import resume from './assets/Asim-Samuel-Resume.pdf'
 
 
 const Sidebar = () => {
