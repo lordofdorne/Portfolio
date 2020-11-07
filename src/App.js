@@ -19,17 +19,10 @@ function App() {
             </div>
             <div className='col-lg-9 app-main-content'>
               <Navbar />
-              <Route path="/">
-                <About />
-              </Route>
+              <Route path="/" component={About} />
+              <Route path="/resume" component={Resume} />
+              <Route path="/projects" component={Projects} />
 
-              <Route path="/resume">
-                <Resume />
-              </Route>
-
-              <Route path="/projects">
-                <Projects />
-              </Route>
             </div>
           </div>
         </div>
