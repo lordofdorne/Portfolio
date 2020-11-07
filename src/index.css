@@ -77,14 +77,14 @@ a:hover {
 }
 
 .sidebar-title {
-	border-radius: 35px;
+	border-radius: 30px;
 	margin-left: 18px;
 }
 .sidebar-social-icons {
 	margin: 3px;
 	background-color: whitesmoke;
 }
-.sidebar-social-icons:hover {
+.side-icon:hover {
 	transform: scale(1.2);
 }
 

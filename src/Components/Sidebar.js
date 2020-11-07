@@ -23,17 +23,18 @@ const Sidebar = () => {
         </div>
       </a>
       <figure className="sidebar-social-icons my-2 mr-3">
-        <SocialIcon url="https://www.linkedin.com/in/asimsamuel/" />
-        <SocialIcon url="https://github.com/lordofdorne" />
-        <SocialIcon url="https://twitter.com/AsimCodes" />
-        <SocialIcon url="https://www.instagram.com/veganporkchopz/" />
+        <SocialIcon className="side-icon" url="https://www.linkedin.com/in/asimsamuel/" />
+        <SocialIcon className="side-icon" url="https://github.com/lordofdorne" />
+        <SocialIcon className="side-icon" url="https://twitter.com/AsimCodes" />
+        <SocialIcon className="side-icon" url="https://www.instagram.com/veganporkchopz/" />
       </figure>
       <div className="sidebar-contact">
         <div className="sidebar-location">
           <img src={pin} alt="location" className="sidebar-icon" /> Brooklyn, NY
         </div>
+
         <div className="sidebar-location">
-          <div className="sidebdar-item">asim.samuel1@gmail.com</div>
+          <div className="sidebdar-item ">asim.samuel1@gmail.com</div>
         </div>
         <div className="sidebdar-item">347-469-9971</div>
       </div>
