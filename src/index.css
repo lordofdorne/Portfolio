@@ -31,7 +31,7 @@ a:hover {
 }
 
 .row {
-	height: 90vh;
+	height: 65vh;
 }
 
 .app-main-content {
@@ -205,4 +205,106 @@ a:hover {
 	margin: 0;
 	font-size: 0.9rem;
 	color: #6e7e91;
+}
+
+/* resume */
+.resume {
+	padding-top: 20px;
+}
+
+.resume-card__heading,
+.reume-language__heading {
+	margin-left: 10px;
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: #354538;
+}
+
+.resume-card__body {
+	margin-top: 10px;
+}
+
+.resume-card__title {
+	font-weight: 700;
+}
+
+.resume-card__name {
+	font-size: 16px;
+}
+
+.resume-card__details {
+	font-size: 0.9rem;
+	padding-top: 5px;
+}
+
+/* bar */
+.bar {
+	width: 90%;
+	background-color: #f1f2f3;
+	border-radius: 20px;
+	margin-bottom: 12px;
+}
+
+.bar__icon {
+	width: 15px;
+	height: 15px;
+}
+
+.bar__wrapper {
+	background-image: linear-gradient(90deg, #6b2737, #e08e45);
+	border-radius: 20px;
+	padding: 4px 14px;
+	color: #fff;
+	font-size: 0.9rem;
+}
+
+/* projects */
+.projects {
+	height: 72vh;
+	padding-top: 30px;
+	overflow-y: auto;
+}
+
+.projectCard__wrapper {
+	margin: 10px 0;
+	width: 100%;
+	height: 100%;
+	min-height: 160px;
+}
+
+.projectCard__image {
+	width: 100%;
+	height: 80%;
+	border-radius: 30px;
+	border: 1px solid #00f260;
+	transition: transform 0.3s linear;
+}
+
+.projectCard__image:hover {
+	transform: scale(1.05);
+}
+
+.projectCard__icon {
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+}
+
+.projectCard__title {
+	margin-top: 12px;
+	font: size 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.projects__navbar {
+	display: flex;
+	margin-bottom: 5px;
+}
+
+.projects__navbar > div {
+	margin: 0 5px;
+	font-size: 1rem;
+	cursor: pointer;
 }
