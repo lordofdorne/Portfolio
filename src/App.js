@@ -1,24 +1,26 @@
-// import logo from './logo.svg';
-// import './App.css';
+import Navbar from './Components/Navbar'
 import Sidebar from './Components/Sidebar'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App" >
-      <div className="container">
-        <div className="row">
-          <div className='col-lg-3'>
-            <div className="app-sidebar">
+    <Router>
+      <div className="App" >
+        <div className="container">
+          <div className="row">
+            <div className='col-lg-3'>
+
               <Sidebar />
 
+
+            </div>
+            <div className='col-lg-9 app-main-content'>
+              <Navbar />
             </div>
           </div>
-          <div className='col-lg-9 app-main-content'>
-            main
-      </div>
         </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
