@@ -47,7 +47,7 @@ const About = () => {
   return (
     <div className="about">
       <h6 className="about__intro">
-        I describe myself as someone who's persistant, a quick learner and loves problem solving by using simple and scalable solutions.
+        Hi im Asim! I'm an ambitious, confident, coachable, software engineer and tech enthusiast. My path has always been centered around challenging myself while having a positive impact on people. I'm a quick learner who loves problem solving by using simple and scalable solutions.
             </h6>
       <div className="container about__container">
         <h6 className="about__heading">What I offer</h6>
