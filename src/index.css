@@ -14,8 +14,16 @@ code {
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:wght@300&display=swap");
 
 body {
-	background-image: linear-gradient(to right bottom, #614385, #516395);
+	background-image: linear-gradient(to right bottom, #6b2737, #e08e45);
 	background-attachment: fixed;
+}
+a {
+	text-decoration: none;
+	color: #354548;
+}
+a:hover {
+	text-decoration: none;
+	color: #000;
 }
 
 .constainer {
@@ -25,15 +33,126 @@ body {
 .row {
 	height: 90vh;
 }
-.app-sidebar {
-	background-color: white;
-	height: 100%;
-	border-radius: 20px;
-	padding: 25px 15px;
-}
 
 .app-main-content {
 	background-color: white;
 	border-radius: 20px;
 	padding: 25px 15px;
+}
+
+.sidebar {
+	background-color: white;
+	height: 100%;
+	border-radius: 20px;
+	padding: 25px 15px;
+}
+.sidebar-avatar {
+	height: 110px;
+	width: 120px;
+	object-fit: contain;
+	border-radius: 30px;
+}
+
+.sidebar-icon {
+	width: 25px;
+	height: 25px;
+}
+
+.sidebar-name {
+	font-family: "Kaushan Script";
+	margin: 20px 0%;
+	font-size: 1.7rem;
+	margin-left: 15px;
+}
+
+.sidebar-name > span {
+	color: #6b2737;
+}
+.sidebar-item {
+	margin-bottom: 6px;
+	padding-top: 6px;
+	height: 40px;
+	font-size: 1.05rem;
+	border-radius: 30px;
+}
+
+.sidebar-title {
+	border-radius: 35px;
+	margin-left: 18px;
+}
+.sidebar-social-icons {
+	margin: 3px;
+	background-color: whitesmoke;
+}
+.sidebar-social-icons:hover {
+	transform: scale(1.2);
+}
+
+.sidebar-contact {
+	background-color: whitesmoke;
+	padding: 2px 0;
+
+	margin: 20px -10px;
+}
+
+.sidebar-location {
+	margin: 13px 0;
+}
+
+.sidebar-email {
+	background-image: linear-gradient(to right bottom, #f8f4a6, #bdf7b7);
+	border-radius: 30px;
+	color: black;
+	margin: 15px 25px 0px;
+
+	cursor: pointer;
+	transform: all 3s linear;
+}
+.sidebar-email:hover {
+	transform: scale(1.2);
+}
+
+.sidebar-resume {
+	background-image: linear-gradient(to right bottom, #f8f4a6, #bdf7b7);
+	border-radius: 30px;
+	color: black;
+	margin: 15px 10px 0;
+
+	cursor: pointer;
+	transform: all 3s linear;
+}
+.sidebar-resume:hover {
+	transform: scale(1.2);
+}
+@media (max-width: 991px) {
+	.app-main-content {
+		margin: 30px 0;
+	}
+}
+
+/* navbar*/
+
+.navbar-items {
+	display: flex;
+}
+
+.navbar-active {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #6b2737;
+	border-bottom: 4px solid #3943b7;
+}
+
+.navbar-item {
+	margin-right: 20px;
+	text-decoration: none;
+	color: #6b2737;
+	font-size: 1.3rem;
+	cursor: pointer;
+}
+.navbar-item:hover {
+	background: -webkit-linear-gradient(#6b2737, #e08e45);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
